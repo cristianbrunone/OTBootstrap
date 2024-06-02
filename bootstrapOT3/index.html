@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial Bootstrap</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início <span class="sr-only">(atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Ação</a>
+                        <a class="dropdown-item" href="#">Outra ação</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desativado</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Bem-vindo ao Bootstrap!</h1>
+        <p class="lead">Este é um exemplo simples de um componente Jumbotron com Bootstrap.</p>
+        <hr class="my-4">
+        <p>Aprenda a usar o Bootstrap de maneira rápida e fácil.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais</a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card animated fadeInUp">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Card</h5>
+                        <p class="card-text">Algum texto rápido de exemplo para construir o título do card e preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card animated fadeInUp delay-1s">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Card</h5>
+                        <p class="card-text">Algum texto rápido de exemplo para construir o título do card e preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card animated fadeInUp delay-2s">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Card</h5>
+                        <p class="card-text">Algum texto rápido de exemplo para construir o título do card e preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+        </ul>
+    </div>
+    <div class="container text-center">
+        <button class="btn btn-primary">Botão Primário</button>
+        <button class="btn btn-warning">Botão de Aviso</button>
+        <button class="btn btn-link">Botão de Link</button>
+        <button class="btn btn-outline-primary">Botão Primário Contornado</button>
+        <button class="btn btn-primary btn-lg">Botão Grande</button>
+        <button class="btn btn-primary btn-sm">Botão Pequeno</button>
+        <button class="btn btn-primary btn-block">Botão de Bloco</button>
+    </div>
+    <div class="container">
+        <div class="alert alert-primary" role="alert">
+            Um simples alerta primário—confira!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            Um simples alerta secundário—confira!
+        </div>
+        <div class="alert alert-success" role="alert">
+            Um simples alerta de sucesso—confira!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Um simples alerta de perigo—confira!
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Santo guacamole!</strong> Você deve verificar alguns desses campos abaixo.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
